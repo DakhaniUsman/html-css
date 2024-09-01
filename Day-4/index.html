@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day - 04</title>
+        <link rel="icon" href="https://www.awdiz.in/awdiz.png">
+        <style>
+            /* <style> tag is used to write the style sheet for the document */
+
+                .container{
+                    width: 100%;
+                    height: 200px;
+                    background-color: lightcoral;
+                }
+
+                .text-center{
+                    text-align: center;
+                }
+
+                .text-blue{
+                    color: blue;
+                }
+
+                #parent{
+                    width: 100%;
+                    height: 200px;
+                    background-color: lightgreen;
+                }
+        </style>
+    </head>
+    <body>
+
+        <h1 class="text-center">Full Stack Development - Day 04</h1>
+
+        <div class="container">
+            <!-- div is a parent element used as a container for other elements also used for grouping -->
+        
+            <h2>Learning about class attribute</h2>
+            <p class="text-blue">Things to follow to use classes in HTML</p>
+            <ul>
+                <li>write . then class name (.container)</li>
+                <li>in element use it with class attribute (class="container")</li>
+            </ul>
+            <p class="text-blue">This style is applied through classs</p>
+            <p class="text-blue">Note that class can be used multiple times in an  HTML document</p>
+        </div>
+
+        <div id="parent">
+            <h2>Learning about id attribute</h2>
+            <p>Things to follow to use id attribute</p>
+            <ul>
+                <li>write # then id name (#parent)</li>
+                <li>in element use it with id attribute (id="parent")</li>
+            </ul>
+            <p>This style is applied through id</p>
+            <p>Note that id should be <mark>unique</mark> and used only once in the document.</p>
+        </div>
+
+        <h2>HTML iframe</h2>
+        <!-- iframe element is used to embed websites within a website means ek website me dusre website ko show kr sakte hai sirf websites hi nhi balki videos map bhi!!! -->
+
+        <p>Embeding website through iframe</p>
+
+        <iframe src="https://www.awdiz.in/" width="400px" height="400px"></iframe>
+
+        <p>Embeding youtube through iframe</p>  
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fdGWRq1dVBA?si=VU-ocRpmG38hfamw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p>Embeding map of Matheran</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25871.885087055267!2d73.25652134137749!3d18.995995020233714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7efe2cfa0ba43%3A0x9051bf4976a81d80!2sMatheran%20Hills!5e0!3m2!1sen!2sin!4v1725185091904!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>HTML Form</h2>
+        <!-- form is the most used in order to get data from the user -->
+        <p>Form type attributes</p>
+
+        <input type="text" name="" id=""><br />
+        <!-- basic input  -->
+        <input type="checkbox" name="" id=""><br />
+        <!-- checkbox -->
+        <input type="date" name="" id=""><br />
+        <!-- date input -->
+        <input type="file" name="" id=""><br />
+        <!-- uploading a file -->
+        <input type="email" name="" id=""><br />
+        <!-- email has inbuilt cheking for email syntax -->
+        <input type="password" name="" id=""><br />
+        <!-- password is shown as asterisk or circles -->
+
+
+        <h2>Creating a HTML Form</h2>
+
+        <label for="name">Enter your name : </label>
+        <!-- label element is used to make connection with the input element by using for and id attributes for is used in label and id is used in input -->
+
+        <input type="text" name="" id="name">
+        <br />
+
+
+        <label for="email">Enter your email :</label>
+        <input type="email" name="" id="name">
+        <br />
+
+        <label for="password">Enter your password :</label>
+        <input type="password" name="" id="password">
+        <br />
+
+        <input type="checkbox" name="" id="terms">
+        <label for="terms">Agree terms and conditions</label>
+        <br />
+
+        <input type="submit" value="Click to Submit">
+
+
+        
+    </body>
+</html>
