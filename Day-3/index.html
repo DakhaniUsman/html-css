@@ -1,166 +1,186 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>FSD Day 03</title>
-        <!-- Adding title to your wbpage enhances your SEO -->
+  <head>
+    <title>FSD Day 03</title>
+    <!-- Adding title to your wbpage enhances your SEO -->
 
-        <link rel="icon" href="https://www.awdiz.in/awdiz.png" />
-        <!-- rel="icon" for adding favicon to your web page and make sure to write it in the head -->
-         <style>
-            table,th,td{
-                border: 2px dashed black;
-                border-collapse: collapse;
-            }
-         </style>
-    </head>
-    <body>
-        <h1 style="text-align: center;">Full Stack Development - Day 03</h1>
+    <link rel="icon" href="https://www.awdiz.in/awdiz.png" />
+    <!-- rel="icon" for adding favicon to your web page and make sure to write it in the head -->
+    <style>
+      table,
+      th,
+      td {
+        border: 2px dashed black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
 
-        <h2>HTML Formating Elements</h2>
+  <body>
+    <h1 style="text-align: center">Full Stack Development - Day 03</h1>
 
-        <p>Testing the <b>b bold</b> element</p>
-        <!-- <b> this is a inline elemnt used to make the text within it bold-->
+    <h2>HTML Formating Elements</h2>
 
-        <p>Testing the <strong>strong</strong> element</p>
-        <!-- <strong> tag is similar to b tage but with better specifications -->
-        
-        <p>Testing the <i>i italic</i> element</p>
-        <!-- <i> tag is used to make the text italic  -->
+    <p>Testing the <b>b bold</b> element</p>
+    <!-- <b> this is a inline elemnt used to make the text within it bold-->
 
-        <p>Testing the <em>em emphasized</em> element</p>
-        <!-- <em> tag is similar to italic <i> tag but with better specifications -->
+    <p>Testing the <strong>strong</strong> element</p>
+    <!-- <strong> tag is similar to b tage but with better specifications -->
 
-        <p>Testing the <mark>mark</mark> element</p>
-        <!-- <mark> tag is used to highlight the text -->
+    <p>Testing the <i>i italic</i> element</p>
+    <!-- <i> tag is used to make the text italic  -->
 
-        <p>Testing the <small>small</small> element</p>
-        <!-- <small> tag is used to make the text within smaller tha parent font size -->
+    <p>Testing the <em>em emphasized</em> element</p>
+    <!-- <em> tag is similar to italic <i> tag but with better specifications -->
 
-        <p>Tetsing the <del>del</del> delete element</p>
-        <!-- <del> tag is used to show that the text is deleted like strike through for offers showing on ecommerse platforms -->
+    <p>Testing the <mark>mark</mark> element</p>
+    <!-- <mark> tag is used to highlight the text -->
 
-        <p>Testing the <ins>ins insert</ins> element</p>
-        <!-- <ins> tag is used to show that the text is underlined or inserted  -->
+    <p>Testing the <small>small</small> element</p>
+    <!-- <small> tag is used to make the text within smaller tha parent font size -->
 
-        <p>Testing the <sub>sub</sub> subscript element</p>
-        <!-- <sub> tag is used to make the text within as subscript like base to the power in maths  -->
+    <p>Tetsing the <del>del</del> delete element</p>
+    <!-- <del> tag is used to show that the text is deleted like strike through for offers showing on ecommerse platforms -->
 
-        <p>Testing the <sup>sup</sup> superscript element</p>
-        <!-- <sup> tag is used to show that the text within is superscript or raised to the power in maths -->
+    <p>Testing the <ins>ins insert</ins> element</p>
+    <!-- <ins> tag is used to show that the text is underlined or inserted  -->
 
-        <h2>HTML Colors</h2>
+    <p>Testing the <sub>sub</sub> subscript element</p>
+    <!-- <sub> tag is used to make the text within as subscript like base to the power in maths  -->
 
-        <p style="color: red;">This text is coloured using normal naming.</p>
-        <!-- Direct color naming -->
+    <p>Testing the <sup>sup</sup> superscript element</p>
+    <!-- <sup> tag is used to show that the text within is superscript or raised to the power in maths -->
 
-        <p style="color: #00ff00;">This text is coloured using hex code color naming</p>
-        <!-- Hex Code -->
+    <h2>HTML Colors</h2>
 
-        <p style="color: rgb(0,0,255);">This text is coloured using rgb naming</p>
-        <!-- RGB Code -->
+    <p style="color: red">This text is coloured using normal naming.</p>
+    <!-- Direct color naming -->
 
-        <h2>HTML Background Image</h2>
-        
-        <div style="background-image:url('https://res.cloudinary.com/www-awdiz-in/image/upload/v1678191857/courses/slider/100-job-guarantee-course-in-mumbai-awdiz.webp');
+    <p style="color: #00ff00">
+      This text is coloured using hex code color naming
+    </p>
+    <!-- Hex Code -->
+
+    <p style="color: rgb(0, 0, 255)">This text is coloured using rgb naming</p>
+    <!-- RGB Code -->
+
+    <h2>HTML Background Image</h2>
+
+    <div
+      style="
+        background-image: url('https://res.cloudinary.com/www-awdiz-in/image/upload/v1678191857/courses/slider/100-job-guarantee-course-in-mumbai-awdiz.webp');
         width: 100%;
-        height: 530px;">    
-        <h1 style="text-align: center;color: #fff;background-color: black;">-----100% JOB GUARANTEE -----</h1>
-        </div> 
+        height: 530px;
+      "
+    >
+      <h1 style="text-align: center; color: #fff; background-color: black">
+        -----100% JOB GUARANTEE -----
+      </h1>
+    </div>
 
+    <h2>HTML Tables</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Job Role</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>xyz</td>
+          <td>Networking Analyst</td>
+          <td>3.7 LPA</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>xyz</td>
+          <td>Windows L1 Engineer</td>
+          <td>4.5 LPA</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>xyz</td>
+          <td>Linux Admin</td>
+          <td>3.8 LPA</td>
+        </tr>
+      </tbody>
+    </table>
 
-        <h2>HTML Tables</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>   
-                    <th>Job Role</th>
-                    <th>Salary</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>xyz</td>
-                    <td>Networking Analyst</td>
-                    <td>3.7 LPA</td>
-                </tr>
-                <tr>
-                    <td>02</td>
-                    <td>xyz</td>
-                    <td>Windows L1 Engineer</td>
-                    <td>4.5 LPA</td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>xyz</td>
-                    <td>Linux Admin</td>
-                    <td>3.8 LPA</td>
-                </tr>
-
-            </tbody>
-        </table>
-
-
-        <!-- <p style="color:red;"></p> 
+    <!-- <p style="color:red;"></p> 
             This is inline CSS        
         
             internal is used for table
             
         -->
 
-        <h2>HTML Lists</h2>
+    <h2>HTML Lists</h2>
 
-        <!-- Three  main types of lists are ordered unordered and description list -->
+    <!-- Three  main types of lists are ordered unordered and description list -->
 
-        <h3>Ordered List</h3>
-        <!-- It follows a specific pattern or order -->
-        <h4>Fruits :</h4>
-        <ol>
-            <li>Appple</li>
-            <li>Mango</li>
-            <li>Banana</li>
-        </ol>
+    <h3>Ordered List</h3>
+    <!-- It follows a specific pattern or order -->
+    <h4>Fruits :</h4>
+    <ol>
+      <li>Appple</li>
+      <li>Mango</li>
+      <li>Banana</li>
+    </ol>
 
-        <h3>Unordered List</h3>
-        <!-- It does not follow any pattern or order -->
-        <h4>Sports :</h4>
-        <ul>
-            <li>Footbal</li>
-            <li>Cricket</li>
-            <li>Badminton</li>
-        </ul>
+    <h3>Unordered List</h3>
+    <!-- It does not follow any pattern or order -->
+    <h4>Sports :</h4>
+    <ul>
+      <li>Footbal</li>
+      <li>Cricket</li>
+      <li>Badminton</li>
+    </ul>
 
-        <h3>Description List</h3>
-        <!-- Its a list type that provides indentation between title and paragrapgh -->
-        <h4>Skills required for Front End Development</h4>
+    <h3>Description List</h3>
+    <!-- Its a list type that provides indentation between title and paragrapgh -->
+    <h4>Skills required for Front End Development</h4>
 
-        <dl>
-            <dt>HTML</dt>
-            <dd>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.</dd>
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        Hypertext Markup Language is the standard markup language for documents
+        designed to be displayed in a web browser. It defines the content and
+        structure of web content.
+      </dd>
 
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. </dd>
+      <dt>CSS</dt>
+      <dd>
+        Cascading Style Sheets is a style sheet language used for specifying the
+        presentation and styling of a document written in a markup language such
+        as HTML or XML.
+      </dd>
 
-            <dt>JS</dt>
-            <dd>Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. </dd>
-        </dl>
-        
-        <h2>HTML <mark>Block and Inline Elements</mark></h2>
+      <dt>JS</dt>
+      <dd>
+        Cascading Style Sheets is a style sheet language used for specifying the
+        presentation and styling of a document written in a markup language such
+        as HTML or XML.
+      </dd>
+    </dl>
 
-        <p style="background-color: red;">This is a block level element</p>
-        <p>It has two properties</p>
-        <ul>
-            <li>Takes full width</li>
-            <li>Starts on a new line</li>
-        </ul>
+    <h2>HTML <mark>Block and Inline Elements</mark></h2>
 
-        <span style="background-color: blue;">This is an inline element</span> <span style="background-color: red;">Inline Element</span>
-        <p>It has two properties</p> 
-        <ul>
-            <li>Take only requred width</li>
-            <li>Follows the previous element</li>
-        </ul>
+    <p style="background-color: red">This is a block level element</p>
+    <p>It has two properties</p>
+    <ul>
+      <li>Takes full width</li>
+      <li>Starts on a new line</li>
+    </ul>
 
-    </body>
+    <span style="background-color: blue">This is an inline element</span>
+    <span style="background-color: red">Inline Element</span>
+    <p>It has two properties</p>
+    <ul>
+      <li>Take only requred width</li>
+      <li>Follows the previous element</li>
+    </ul>
+  </body>
 </html>
