@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 5</title>
+        <link rel="icon" href="https://www.awdiz.in/awdiz.png">
+        <style>
+            h1{
+                text-align: center;
+            }
+            body{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Full Stack Development - Day 05</h1>
+        <h2>Radio Input Type</h2>
+        <!-- radio input type is used to allow user to select only one value from the list given -->
+
+        <form action="get">
+            <input type="radio" name="language" id="html" value="HTML">
+            <label for="html">HTML</label>
+            <br />
+
+            <input type="radio" name="language" id="css" value="CSS">
+            <label for="css">CSS</label>
+            <br />
+
+            <input type="radio" name="language" id="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <br />
+
+        </form>
+
+        <h2>Checkboxes Input Type</h2>
+        <!-- checkbox input type is used to select multiple options from the list given below -->
+
+        <form action="get">
+            <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
+            <label for="vehicle1">I have a bike</label>
+            <br />
+
+            <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+            <label for="vehicle2">I have a car</label>
+            <br />
+
+              <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat">
+            <label for="vehicle3">I have a boat</label>
+            <br />
+
+        </form>
+
+        <h2>HTML Form Elements</h2>
+
+        <form action="get">
+            <fieldset>
+                <!-- fieldset element is used to group the similar elements -->
+
+                <legend>Survey Form</legend>
+                <!-- legend element is used to give caption to the form -->
+
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <br/>
+
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <br />
+
+                <label for="position">What position your want to apply for : </label>
+                <!-- select element is used to provide a dropdown effect-->
+                <select name="position" id="position">
+                    <option value="">Select</option>
+                    <option value="FED">Front End Developer</option>
+                    <option value="BED">Back End Developer</option>
+                    <option value="FSD">Full Stack Developer</option>
+                </select>
+                <br/>
+
+                <label for="desc">Give a brief description about yourself : </label>
+                <textarea name="desc" id="desc" rows="10" cols="40" placeholder="Tell about yourself" required></textarea>
+                <!-- textarea is used to take details from user -->
+
+                <input type="text" readonly size="80" value="size attribute is used to control the width of input element but is send during submission">
+                <br />
+                <!-- readonly attribute has no value it cannot be modified but is submitted during submission -->
+
+                <input type="text" size="80" disabled value="disabled attribute is used to make the input field disabled and it is not send during submission"> 
+                <br/>
+                <!-- disabled attribute has no value it makes the input field disabled it cannot be modified nor it is submitted during submission -->
+
+
+            </fieldset>
+        </form>
+    </body>
+</html>
