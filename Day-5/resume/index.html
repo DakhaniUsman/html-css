@@ -7,10 +7,15 @@
     <style>
         body{
             font-family:'Times New Roman', Times, serif;
-            font-size: 20px;
+            font-size: 18px;
         }
         .top-headings{
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 50px;
+        }
+        .text-primary{
+            color: #007bff;
         }
         .main-heading{
             font-weight: bold;
@@ -18,9 +23,13 @@
         .sub-heading{
             font-weight: bold;
         }
+        .details{
+            list-style-type: none;
+            padding: 0;
+        }
         .main{
             position: relative;
-            padding:1em 2em;
+            padding:1em;
         }
         .description{
             border-top: 1px solid #000;
@@ -28,24 +37,187 @@
             text-align: justify;
             letter-spacing: 2px;
         }
+        .education-table{
+            width: 40%;
+            text-align: center;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th{
+            background-color: #007bff;
+            color: white;
+        }
+        th,td{
+            padding: 5px;
+        }
+
+        td{
+            background-color: #f8f9fa;
+        }
+
+        .skills-list{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: circle;
+        }
+
+        .personal-skills-list{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text-msg{
+            display: flex;
+            align-items: center;
+        }
+
+        #contact fieldset legend{
+            padding: 0px 15px;
+        }
+
+        #contact{
+            width: max-content;
+        }
+
+        #conact input,textarea{
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .form-div{
+            padding: 5px;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+        .btn{
+            font-size: 16px;
+            background-color: #007bff;
+            color:white;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+
+
     </style>
 </head>
 <body>
     <div class="top-headings">
-        <h1 class="main-heading txt-center">Dakhani Usman</h1>
+        <div class="data">
+            <h1 class="main-heading txt-center">Dakhani Usman</h1>
         <p class="sub-heading">Front End Developer</p>
+        <ul class="details">
+            <li><b class="text-primary">Email :</b> dakhaniusman@gmail.com</li>
+            <li><b class="text-primary">Mobile No :</b> +91 9326219059</li>
+            <li><b class="text-primary">Address :</b> Riddhi Siddhi Heritage, sec-14, Plot. No. 103 Kamothe, Navi Mumbai, Panvel</li>
+        </ul>
+        </div>
         <div class="profile">
-            <img src="" alt="">
+            <img src="assets/about.png" alt="profile image" width="220px" >
         </div>
     </div>
-    
+
 
     <div class="main">
         <div class="description">
-            <p class="desc">I am a dedicated front-end developer with a strong foundation in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, the essential technologies for modern web development. My expertise extends to popular frameworks and libraries such as <b>React.js</b> and <b>Bootstrap</b>, which I leverage to build dynamic and <b>responsive websites</b>. Through hands-on experience with over five personal projects, I have consistently created visually appealing and user-friendly web solutions that demonstrate my skills and commitment to quality.I also possess a strong understanding of <b>Git</b> and <b>GitHub</b>, along with some experience as a <b>tester</b>.</p>
+            <p class="desc">I am a dedicated front-end developer with a strong foundation in <b class="text-primary">HTML</b>, <b class="text-primary">CSS</b>, and <b class="text-primary">JavaScript</b>, the essential technologies for modern web development. My expertise extends to popular frameworks and libraries such as <b class="text-primary">React.js</b> and <b class="text-primary">Bootstrap</b>, which I leverage to build dynamic and <b class="text-primary">responsive websites</b>. Through hands-on experience with over five personal projects, I have consistently created visually appealing and user-friendly web solutions that demonstrate my skills and commitment to quality.I also possess a strong understanding of <b class="text-primary">Git</b> and <b class="text-primary">GitHub</b>, along with some experience as a <b class="text-primary">tester</b>.</p>
         </div>
-        <div class="experience">
-            <h2>Work Experience</h2>
+        <div class="education">
+            <h2>Education</h2>
+            <div class="education-container">
+                <table class="education-table">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>College Name</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>AIKTC</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D.Y. Patil</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>St. Joseph's High School</td>
+                            <td>2018</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="technical-skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+        <div class="personal-skills">
+            <h2>Personal Skills</h2>
+            <div class="personal-skills-container">
+                <ol class="personal-skills-list">
+                    <li>Leadership</li>
+                    <li>Trouble Shooting</li>
+                    <li>Quick Learner</li>
+                    <li>Communication Skills</li>
+                </ol>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="get" id="contact">
+                <fieldset>
+                    <legend>Connect with me</legend>
+
+                    <div class="name form-div">
+                        <label for="name">Name : </label>
+                    <input type="text" name="name" id="name">
+                    <br/>
+                    </div>
+
+                    <div class="email form-div">
+                        <label for="email">Email : </label>
+                    <input type="email" name="email" id="email">
+                    <br/>
+                    </div>
+
+                    <div class="text-msg form-div">
+                        <label for="message">Message : </label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn">
+
+                </fieldset>
+            </form>
         </div>
     </div>
 </body>
