@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 07 - Practice</title>
+        <link rel="icon" href="https://www.awdiz.in/awdiz.png">
+    </head>
+    <style>
+        body{
+            font-size: 18px;
+        }
+
+        .txt-cntr{
+            text-align: center;
+        }
+
+        .leaf-village-data, th, td{
+            text-align: center;
+            border: 1px double green;
+        }
+
+        th{
+            background-color: lightgreen;
+        }
+
+        .leaf-village-data{
+            width: 70%;
+        }
+
+        .container{
+            background-color: black;
+            padding: 1em;
+            color: white;
+        }
+
+        #id-container{
+            background-color: maroon;
+            padding: 1em;
+            color: white;
+            font-family: cursive;
+            box-shadow: 10px 10px 0px #aaa;
+        }
+        .iframe-contianer{
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 2em;
+        }
+
+        iframe{
+            box-shadow:0px 0px 30px #00eeff;
+        }
+
+        .btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: aqua;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px #000;
+        }
+
+
+        .basic input{
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="headings">
+            <h1 class="txt-cntr">Full Stack Development - Day 7</h1>
+            <h2 class="txt-cntr">Dakhani Usman</h2>
+        </div>
+
+        <div class="main">
+            <h2>Learning HTML</h2>
+            <p>HTML stands for <mark>Hyper Text Markup Language</mark>
+            </p>
+            <p>It has main two things</p>
+            <dl>
+                <dt>Hypertext</dt>
+                <dd>It simply means text within text or a text which is a link to other text</dd>
+
+                <dt>Markup</dt>
+                <dd>Layout and formating it can turn text into images audio video and many more...</dd>
+            </dl>
+
+            <h2>HTML Formating elements</h2>
+            <p>Inline elements that are used to format the html content it contains elements such as : </p>
+            <ul>
+                <li>b makes text <b>bold</b></li>
+                <li><strong>strong</strong> similar to bold</li>
+                <li>i makes text <i>italic</i></li>
+                <li>em similar to <em>italic</em></li>
+                <li>mark element used to <mark>highlight</mark></li>
+            </ul>
+
+            <h2>Styling HTML</h2>
+            <ol>
+                <li>Inline that is withing the start tag of element</li>
+                <li>Internal means within the same HTML file</li>
+                <li>External using a seperate file for styling ank linking it to the HTML document</li>
+                <li>JavaScript a more fun way to style elements through JS</li>
+            </ol>
+
+            <h2>HTML Favicon</h2>
+            <p>As used in the title above >_< </p>
+
+            <h2>HTML Tables <mark>IMPORTNAT</mark></h2>
+            <table class="leaf-village-data">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Name</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Uchiha Madara</td>
+                        <td>Ghost of Uchiha</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Namikaze Minato</td>
+                        <td>Yellow Flash of the Leaf</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Hatake Kakashi</td>
+                        <td>The Copy Ninja</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>HTML Inline and Block Elements <mark>IMPORTANT</mark></h2>
+            <p style="border: 1px solid black;background-color: mediumseagreen;">This is a block level Element</p>
+            <p>It has two properties : </p>
+            <ul>
+                <li>Takes full width</li>
+                <li>Next element on next line</li>
+            </ul>
+
+            <span style="border: 1px solid black;background-color: mediumslateblue"> This is a block level Element</span>
+            <span>See how it takes only required area </span>
+            <p>It has two properties :</p>
+            <ul>
+                <li>Takes only required width</li>
+                <li>Next element on follows previous element</li>
+            </ul>
+
+            <h2>HTML Class and ID <mark>IMPORTNAT</mark></h2>
+            <div class="container">
+                <h3>This container is styled by class attribute</h3>
+                <p>How to us it :</p>
+                <ol>
+                    <li>specify the class name in the start tag of elemnet using class atrribute </li>
+                    <li>In stylesheet syntax is to first use . followed by classname </li>
+                </ol>
+            </div>
+
+            <hr>
+
+            <div id="id-container">
+                <h3>This container is styled by id attribute</h3>
+                <p>How to us it :</p>
+                <ol>
+                    <li>specify the id name in the start tag of elemnet using class atrribute </li>
+                    <li>In stylesheet syntax is to first use # followed by idname </li>
+                </ol>
+            </div>
+
+            <h2>HTML Iframe</h2>
+            <p>It is used to embed websites videos maps</p>
+            <div class="iframe-contianer">
+                <iframe src="https://www.wikipedia.org" width="350" height="300px" frameborder="0"></iframe>
+
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/wyiZWYMilgk?si=TalxQG0M-yOHdFcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414898.12561600946!2d139.14994188840564!3d35.66735834517258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sin!4v1725982980886!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <h2>HTML Form <mark>IMPORTANT</mark></h2>
+            <form action="get">
+                <fieldset>
+                    <legend>Inquiry Form</legend>
+
+                    <fieldset class="basic">
+                        <legend>Basic Details</legend>
+                        <label for="text">Name : </label>
+                        <input type="text" name="" id="" placeholder="Enter your name" required>
+                        <br>
+                        <label for="email"> Email : </label>
+                        <input type="email" name="" id="" placeholder="Enter your name" required>
+                        <br>
+                        <label for="password">Password : </label>
+                        <input type="password" name="" id="" placeholder="Enter your password" required>
+                        <br>
+                        
+                    </fieldset>
+                    <fieldset class="career">
+                        <legend>Career Details</legend>
+                        <p>Languages known : </p>
+                        <input type="checkbox" name="html" id="html"> <label for="html">HTML</label> <br>
+                        <input type="checkbox" name="css" id="css"> <label for="css">CSS</label> <br>
+                        <input type="checkbox" name="js" id="js"> <label for="js">JavaScript</label> <br>
+                        <input type="checkbox" name="bootstrap" id="bootstrap"> <label for="bootstrap">Bootstrap</label> <br>
+                        <input type="checkbox" name="M" id="M"> <label for="M">Mongo DB</label> <br>
+                        <input type="checkbox" name="E" id="E"> <label for="E">Express.js</label> <br>
+                        <input type="checkbox" name="R" id="R"> <label for="R">React.js</label> <br>
+                        <input type="checkbox" name="N" id="N"> <label for="N">Node.js</label> <br>
+                        
+                    </fieldset>
+                    <fieldset class="gender">
+                        <legend>Personal Details</legend>
+                            <input type="radio" name="male" id="male"> <label for="male">Male</label> 
+                            <input type="radio" name="female" id="female"> <label for="female">Female</label> 
+                    </fieldset>
+                    <fieldset >
+                        <legend>Policy</legend>
+                        
+                    <input type="checkbox" name="plicy" id="policy"><label for="policy">I agree to the terms and conditions</label>
+                    </fieldset>
+
+                    <input type="submit" value="Submit" class="btn" onclick="alert('Thank You your response has been recorded')">
+                </fieldset>
+            </form>
+
+           
+        </div>
+    </body>
+</html>
