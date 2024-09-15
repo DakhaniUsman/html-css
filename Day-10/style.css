@@ -1,0 +1,19 @@
+.headings{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1.name {
+    color: purple;
+}
+
+.width-container{
+    width: 1000px;
+    background-color: burlywood;
+}
+
+.max-width-container{
+    max-width: 1000px;
+    background-color: brown;
+}
