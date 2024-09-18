@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Day 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="txt-cntr">Full Stack Development - Day 11</h1>
+    <h1 class="name txt-cntr">Dakhani Usman</h1>
+
+    <!-- display flex is used in the parent element to make the children appear in a row inspite of being block elements -->
+
+    <h2>CSS - Position </h2>
+
+    <h3>Position Static</h3>
+    <!-- position static is by default value -->
+    <div class="position">
+        <div class="container">
+            <div class="children">1</div>
+            <div class="children child-2-s">2</div>
+            <div class="children">3</div>
+        </div>
+    </div>
+
+    <h3>Position Relative</h3>
+    <div class="position">
+        <!-- position relative has 2 important point it is moved from its position and its position is not assigned to the next element -->
+        <div class="container">
+            <div class="children">1</div>
+            <div class="children child-2-r">2</div>
+            <div class="children">3</div>
+        </div>
+    </div>
+
+    <h3>Position Absolute</h3>
+    <div class="position">
+        <!-- position absolute has 2 important points it is moved is reference to the origin that is starting point of parent element  and its position is assigned to the next element-->
+        <div class="container">
+            <div class="children">1</div>
+            <div class="children child-2-a">2</div>
+            <div class="children">3</div>
+        </div>
+    </div>
+
+    <h3>Position Sticky</h3>
+    <div class="sticky-container">
+        <div class="sticky-children">1</div>
+        <div class="sticky-children stick">2</div>
+        <div class="sticky-children">3</div>
+    </div>
+
+    <h2>CSS- Overflow</h2>
+    <!-- overflow property is used to control the text behaviour within container -->
+    <div class="overflow-container">
+        <p style="overflow: visible;"><u>This is overflow visible. It show the extra content outside the box</u></p>
+        <p style="overflow: hidden;"><u>This is overflow hidden. It hides the extra content outside the box</u></p>
+        <p style="overflow: scroll;"><u>This is overflow scroll. It adds scrollbar on x axis and y axis</u></p>
+        <p style="overflow: auto;"><u>This is overflow auto. It adds scrollbar only where it is required</u> </p>
+    </div>
+
+    <h2>CSS - Margin auto</h2>
+    <!-- margin auto only makes text horizontally center -->
+    <!-- margin auto automatically places the element to center by eqaully dividing the spaces left and right -->
+    <div class="margin-container">
+        <p>This container is horizontally centered through margin auto property. It equally devides the width and makes the content appear in center</p>
+    </div>
+
+    <h2>Making image center</h2>
+    <!-- iimage being inline element it is first made as block element then margin auto to center align it -->
+    <img src="https://i.pinimg.com/564x/c9/83/b5/c983b560a680c665dfe0c2cef305be8b.jpg" alt="Pirate King" class="luffy">
+
+    <div class="sticky-button">
+        <button></button>
+    </div>
+</body>
+</html>
