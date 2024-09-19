@@ -7,6 +7,38 @@ h1.name{
     filter: drop-shadow( 0px 0px 7px)
 }
 
+.flexdirection{
+    width: 95%;
+    height: auto;
+    background-color: turquoise;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+}
+
+.flex-d-container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.direction-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-d-child{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .parent{
     width: 95%;
     background-color: burlywood;
