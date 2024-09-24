@@ -6,7 +6,7 @@
 
 #container{
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     /* border: 5px solid red; */
@@ -32,19 +32,23 @@
 }
 
 .logo-img{
-    margin-left: 7%;
+    margin-left: 10%;
     width: 34px;
     height: 34px;
 }
 
 .search{
     width: 50%;
-    height: 60px;
+    /* height: 5px; */
     /* border: 1px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: #b3b3b3;
+}
+
+.mobile-nav{
+    display: none;
 }
 
 .search-container{
@@ -53,15 +57,15 @@
     justify-content: space-around;
     align-items: center;
     /* border: 1px solid white; */
-    
+
 }
 
 .home{
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     /* border: 1px solid white;    */
-    border-radius: 50%; 
-    padding: 8px;
+    border-radius: 50%;
+    padding: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,20 +74,22 @@
 }
 
 .material-symbols-outlined {
+    color: white;
   font-variation-settings:
-  'FILL' 0,
+  'FILL' 1,
   'wght' 100,
   'GRAD' 0,
   'opsz' 24
 }
 
 .search  span{
-    font-size: 34px;
+    font-size: 36px;
     /* height: 8%; */
 }
 
 .search-bar{
     width: 100%;
+    height: 48px;
     padding: 8px 5px;
     display: flex;
     justify-content: center;
@@ -99,15 +105,56 @@
     font-size: 16px;
     margin: 0px 5px;
     background-color: #1f1f1f;
+    color: #b3b3b3;
     border: none;
     border-right: 1px solid #b3b3b3;
     outline: none;
 }
 
+.search-bar > input::placeholder{
+    color: #b3b3b3;
+}
+
+
 .login{
-    width: 15%;
+    width: 14%;
     height: 60px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+}
+
+.login-container{
+    width: 100%;
+    height: 60px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login-container p{
+    font-weight: 600;
+}
+
+.sign-up{
+    width: 40%;
+    padding: 15px 5px;
+    /* border: 1px solid red; */
+    color: #b3b3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in{
+    width: 40%;
+    padding: 15px 5px;
+    /* border: 1px solid red; */
+    background-color: white;
+    color: #000000;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #main{
@@ -121,4 +168,106 @@
     width: 100%;
     height: 80px;
     /* border: 5px solid green; */
+}
+
+@media  screen and  (min-width:1440px) and (max-width: 2000px) {
+    #main{
+        background-color: white;
+    }
+
+    .search-container{
+        width:55%;
+    }
+
+}
+
+@media screen and (min-width : 300px) and (max-width:599px) {
+
+    #navbar{
+        width: 100%;
+        height: 56px;
+        justify-content: space-between;
+    }
+
+
+
+    .logo{
+        width: 15%;
+        height: 40px;
+        justify-content: center;
+    }
+
+    .logo-img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .mobile-nav{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .mobile-nav-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .mbl-search{
+        width:max-content;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .mbl-search > span{
+        font-size: 28px;
+        width: 100%;
+        height: 80%;
+    }
+
+    .app{
+        width: 45%;
+        padding:10px 0px;
+        font-size: 13px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        color: black;
+        border-radius: 999px;
+    }
+
+    .menu{
+        width: max-content;
+        /* background-color: #FFFFFF; */
+        height: max-content;
+        font-size: 36px;
+        font-weight: 600;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu > span{
+        font-size: 32px
+    }
+
+    .login{
+        display: none;
+    }
 }
