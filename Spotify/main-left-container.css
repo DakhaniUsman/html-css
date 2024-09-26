@@ -1,0 +1,252 @@
+/* mobile screen */
+
+@media screen and (min-width : 300px) and (max-width:599px) {
+
+    #navbar{
+        width: 100%;
+        height: 56px;
+        justify-content: space-between;
+    }
+
+
+
+    .logo{
+        width: 15%;
+        height: 40px;
+        justify-content: center;
+    }
+
+    .logo-img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .mobile-nav{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .mobile-nav-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .mbl-search{
+        width:max-content;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .mbl-search > span{
+        font-size: 28px;
+        width: 100%;
+        height: 80%;
+    }
+
+    .app{
+        width: 45%;
+        padding:10px 0px;
+        font-size: 13px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        color: black;
+        border-radius: 999px;
+    }
+
+    .menu{
+        width: max-content;
+        /* background-color: #FFFFFF; */
+        height: max-content;
+        font-size: 36px;
+        font-weight: 600;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu > span{
+        font-size: 35px
+    }
+
+    .login{
+        display: none;
+    }
+}
+
+/* tablet screen */
+
+@media screen and (min-width : 600px) and (max-width:899px) {
+
+    #navbar{
+        width: 100%;
+        height: 56px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        width: 15%;
+        height: 40px;
+        justify-content: left;
+        margin-left: 15px;
+        align-items: center;
+    }
+
+    .logo-img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .tablet-nav{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 80%;
+        /* border: 1px solid white; */
+    }
+
+    .left-nav{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .tablet-icons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+
+    .mbl-search{
+        width: 48px;
+        height: 48px;
+        /* border: 1px solid white;    */
+        border-radius: 50%;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1f1f1f;
+    }
+
+    .tablet-icons span{
+        font-size: 36px;
+    }
+
+
+    .search{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .login{
+        display: block;
+        width: 50%;
+    }
+}
+
+/* laptop screen */
+
+@media screen and (min-width : 900px) and (max-width:1200px){
+
+    #navbar{
+        width: 100%;
+        height: 56px;
+
+        align-items: center;
+    }
+
+    .logo{
+        width: 15%;
+        height: 40px;
+        justify-content: left;
+        margin-left: 15px;
+        align-items: center;
+    }
+
+    .logo-img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .tablet-nav{
+        display: none;
+    }
+
+
+    .search{
+        display: flex;
+        width: 60%;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .login{
+        display: flex;
+        width: 20%;
+
+    }
+
+    .main-left-container{
+        display: none;
+    }
+
+    .marging-right-container{
+        /* position: relative; */
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1201px) and (max-width:1449px){
+
+    .library-left{
+        width: 60%;
+    }
+
+    .card-heading{
+        font-size: 14px;
+    }
+    
+    .card-title{
+        font-size: 12px;
+    }
+}
+
+@media  screen and  (min-width:1450px) and (max-width:1920px){
+    .search{
+        width:35%;
+    }
+
+
+    .library-left{
+        width: 50%;
+    }
+
+
+}
