@@ -96,6 +96,11 @@
         position: relative;
         left: 0%;
         width: 100%;
+        height: 100%;
+    }
+
+    #footer{
+        display: none;
     }
 }
 
@@ -183,6 +188,11 @@
         position: relative;
         left: 0%;
         width: 100%;
+        height: 100%;
+    }
+
+    #footer{
+        display: none;
     }
 
 }
@@ -241,6 +251,14 @@
         width: 100%;
     }
 
+    .footer-container-left{
+        width: 80%;
+    }
+
+    .footer-container-right{
+        width : 20%;
+    }
+
 }
 
 @media screen and (min-width:1201px) and (max-width:1449px){
@@ -265,6 +283,14 @@
     .main-right-container{
         left: 21%;
         height: 87%;
+    }
+
+    .footer-container-left{
+        width: 60%;
+    }
+
+    .footer-container-right{
+        width : 20%;
     }
 }
 
