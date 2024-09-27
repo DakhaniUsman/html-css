@@ -692,6 +692,7 @@ div.cookies {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(#212121,#121212);
 }
 
 .right-container-heading {
