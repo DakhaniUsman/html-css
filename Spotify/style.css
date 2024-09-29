@@ -583,8 +583,8 @@
     align-items: center;
     /* border: 5px solid blue; */
     border-radius: 10px;
-    padding: 1em 0em;
-    margin: 1em 0em;
+    padding: 1em 0em 0em 0em;
+    margin: 1em 0em 0em 0em;
 }
 
 .left-footer-container{
@@ -749,6 +749,7 @@ div.cookies {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 .artist-card {

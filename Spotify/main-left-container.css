@@ -311,3 +311,60 @@
 
 
 }
+@media screen  and (max-width : 550px){
+    .width-550{
+        display: none;
+    }
+
+    .artist-card{
+        width: 33%;
+    }
+}
+
+@media screen  and (max-width : 650px){
+    .width-650{
+        display: none;
+    }
+
+    .artist-card{
+        width: 33%;
+    }
+}
+
+
+@media screen  and (max-width : 750px){
+    .width-750{
+        display: none;
+    }
+
+    .artist-card{
+        width: 33%;
+    }
+}
+
+@media screen  and (max-width : 950px){
+    .width-950{
+        display: none;
+    }
+
+    .artist-card{
+        width: 300px;
+    }
+
+    .album-card{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width : 1600px){
+    .width-1600{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 1700px){
+    .width-1700{
+        display: none;
+    }
+}
