@@ -1,10 +1,13 @@
-.txt-cntr{
+.txt-cntr {
     text-align: center;
 }
 
-h1.name{color: #019171;}
+h1.name {
+    color: #019171;
+}
 
-.position{
+.position {
+    position: relative;
     border: 1px solid black;
     padding: 1em;
     display: flex;
@@ -12,12 +15,12 @@ h1.name{color: #019171;}
 }
 
 
-.container{
+.container {
     position: relative;
     display: flex;
 }
 
-.children{
+.children {
     width: 100px;
     height: 100px;
     background-color: red;
@@ -26,33 +29,33 @@ h1.name{color: #019171;}
     position: relative;
 }
 
-.child-2-s{
+.child-2-s {
     background-color: yellow;
 }
 
-.child-2-r{
+.child-2-r {
     background-color: yellow;
     position: relative;
     top: 40px;
     left: 40px;
 }
 
-.child-2-a{
+.child-2-a {
     background-color: yellow;
     position: absolute;
     top: 40px;
     left: 40px;
 }
 
-.sticky-container{
+.sticky-container {
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    padding: 3em ;
+    padding: 3em;
     height: 400px;
 }
 
-.sticky-children{
+.sticky-children {
     background-color: red;
     width: 100px;
     height: 100px;
@@ -60,27 +63,43 @@ h1.name{color: #019171;}
     margin: 20px;
 }
 
-.stick{
+.stick {
     background-color: yellow;
     position: sticky;
     top: 20px;
 }
 
-.overflow-container{
+.fixed-container{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 250px;
+    height: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumslateblue;
+    box-shadow: 0px 0px 20px mediumslateblue, 0px 0px 30px black inset;
+    color: white;
+    font-size: 2em;
+}
+
+.overflow-container {
     display: flex;
     justify-content: space-between;
     padding: 3em;
     background-color: antiquewhite;
 }
 
-.overflow-container p{
+.overflow-container p {
     width: 150px;
     height: 100px;
     border: 1px dashed black;
     font-size: 1.5em;
 }
 
-.margin-container{
+.margin-container {
     background-color: #aef456;
     padding: 2em;
     width: 50%;
@@ -88,12 +107,12 @@ h1.name{color: #019171;}
 }
 
 
-.margin-container p{
+.margin-container p {
     font-size: 2em;
     text-align: center;
 }
 
-.luffy{
+.luffy {
     width: 300px;
     height: fit-content;
     border-radius: 20px;
