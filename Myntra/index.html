@@ -60,8 +60,57 @@
                 </div>
             </div>
         </div>
-        <div id="body"></div>
+        <div id="body">
+            <section id="time">
+                <div class="time-container">
+                    <p class="time-para">
+                        <span>Sale Ends In</span>
+                        <span id="time-value">
+                            <span id="hour" class="time-digit"></span> <span class="time-letter">H</span> &nbsp; :
+                            <span id="minutes" class="time-digit"></span> <span class="time-letter">M</span> &nbsp; :
+                            <span id="seconds" class="time-digit"></span> <span class="time-letter">S</span>
+                    </p>
+                </div>
+            </section>
+
+            <section id="home">
+                <div class="home-container">
+                    <div class="home-image">
+                        <img src="./assets/home-banner-1.webp" alt="home-banner" title="home-banner">
+                        <img src="./assets/home-banner-2.webp" alt="home-banner" title="home-banner">
+                    </div>
+                    <div class="home-bank">
+                        <img src="./assets/bank-1.webp" alt="">
+                        <img src="./assets/bank-2.webp" alt="">
+                        <img src="./assets/bank-3.webp" alt="">
+                        <img src="./assets/bank-4.webp" alt="">
+                        <img src="./assets/bank-5.webp" alt="">
+                    </div>
+                    <div class="home-logo">
+                        <img src="./assets/logo-1.webp" alt="">
+                        <img src="./assets/logo-2.webp" alt="">
+                        <img src="./assets/logo-3.webp" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
         <div id="footer"></div>
     </div>
+
+    <script>
+        function UpdateTime() {
+            const time = new Date();
+            const hour = time.getHours();
+            const minutes = time.getMinutes();
+            const seconds = time.getSeconds();
+            
+            document.getElementById("hour").innerHTML = hour;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        }
+
+        setInterval(UpdateTime, 1000);
+        UpdateTime(); // Initial call to display time immediately
+    </script>
 </body>
 </html>
